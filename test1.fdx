@@ -62,9 +62,9 @@
     <AutoCastList AddParentheses="Yes" AutomaticallyGenerate="Yes" CastListElement="Cast List"/>
   </PageLayout>
 
-  <WindowState Height="878" Left="0" Mode="Normal" Top="0" Width="870"/>
+  <WindowState Height="878" Left="364" Mode="Normal" Top="3" Width="870"/>
 
-  <TextState Scaling="100" Selection="29,30" ShowInvisibles="No"/>
+  <TextState Scaling="100" Selection="29,29" ShowInvisibles="No"/>
 
   <ElementSettings Type="General">
     <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
@@ -441,9 +441,9 @@
   </Revisions>
 
   <SplitState ActivePanel="1" CardsAcross="2" ShowAction="Yes" ShowSceneTitle="Yes" ShowSummary="Yes" SplitMode="None" SplitterPosition="0">
-    <ScriptPanel DisplayMode="Page">
+    <BeatBoardPanel DisplayMode="BeatBoard" ScrollOrigin="0,0">
       <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Arial" RevisionID="0" Size="12" Style=""/>
-    </ScriptPanel>
+    </BeatBoardPanel>
   </SplitState>
 
   <Macros>
@@ -750,11 +750,29 @@
 
   <TargetScriptLength>120</TargetScriptLength>
 
-  <ListItems/>
+  <ListItems>
+    <ListItem Color="#FFFFFFFFFFFF" Id="996af4e7-34f2-42ad-84a0-56287ee5c071" Title="" Type="Beat">
+      <Content>
+        <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="0.00" RightIndent="3.01" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+          <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Arial" RevisionID="0" Size="12" Style="">IMG_1077.HEIC</Text>
+        </Paragraph>
+      </Content>
+    </ListItem>
+    <ListItem Color="#FFFFFFFFFFFF" Id="503e162a-fc2b-4606-bf9d-9b1367f1bfe6" Title="" Type="Beat">
+      <Content>
+        <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="0.00" RightIndent="3.01" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+          <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Arial" RevisionID="0" Size="12" Style=""></Text>
+        </Paragraph>
+      </Content>
+    </ListItem>
+  </ListItems>
 
   <DisplayBoards>
-    <DisplayBoard Height="10000" Id="ea5ac6af-4926-415c-897c-51bfeff25831" ScrollOrigin="0,0" Type="Beat" Width="24000" ZoomLevel="100.000"/>
-    <DisplayBoard Height="75" Id="f54e428f-4469-484b-8c9d-7dba54866258" ScrollOrigin="0,0" Type="StoryMap" Width="14600" ZoomLevel="730.000"/>
+    <DisplayBoard Height="10000" Id="ea5ac6af-4926-415c-897c-51bfeff25831" ScrollOrigin="0,0" Type="Beat" Width="24000" ZoomLevel="100.000">
+      <Item Height="100" Id="503e162a-fc2b-4606-bf9d-9b1367f1bfe6" Left="500" Top="140" Width="240"/>
+      <Item Height="100" Id="996af4e7-34f2-42ad-84a0-56287ee5c071" Left="160" Top="400" Width="240"/>
+    </DisplayBoard>
+    <DisplayBoard Height="176" Id="f54e428f-4469-484b-8c9d-7dba54866258" ScrollOrigin="0,0" Type="StoryMap" Width="800" ZoomLevel="40.000"/>
   </DisplayBoards>
 
   <Writers/>
@@ -822,25 +840,25 @@
     <ChartOptions Identifier="InclusivityAnalysis">
       <FilterSets>
         <FilterSet Default="Yes">
-          <Filter Index="1" Name="Trait" Value="">
-            <Match></Match>
+          <Filter Index="0" Name="Count" Value="MIN">
+            <Match>1</Match>
           </Filter>
           <Filter Index="0" Name="Trait" Value="Role">
             <Match></Match>
           </Filter>
-          <Filter Index="0" Name="Count" Value="MIN">
-            <Match>1</Match>
+          <Filter Index="1" Name="Trait" Value="">
+            <Match></Match>
           </Filter>
         </FilterSet>
         <FilterSet>
-          <Filter Index="1" Name="Trait" Value="">
-            <Match></Match>
+          <Filter Index="0" Name="Count" Value="MIN">
+            <Match>1</Match>
           </Filter>
           <Filter Index="0" Name="Trait" Value="">
             <Match></Match>
           </Filter>
-          <Filter Index="0" Name="Count" Value="MIN">
-            <Match>1</Match>
+          <Filter Index="1" Name="Trait" Value="">
+            <Match></Match>
           </Filter>
         </FilterSet>
       </FilterSets>
